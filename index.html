@@ -1,0 +1,675 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Reverie Weaver | The habit app that forgives</title>
+<meta name="description" content="Reverie Weaver is a gentle habit companion for iPhone and iPad. Forgiving by design, beautifully made, private by default. No ads, no account, works offline.">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#0F172A">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Reverie Weaver | The habit app that forgives">
+<meta property="og:description" content="A gentle habit companion for iPhone and iPad. Show up imperfectly, return when you can, and let a grimoire of small days write itself.">
+<meta property="og:image" content="https://reveriearchive-studio.github.io/reverie-weaver/img/og.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32.png">
+<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+<link rel="preload" as="image" href="img/shots/hero-desk.webp" type="image/webp">
+<link rel="stylesheet" href="css/site.css">
+<script>document.documentElement.className += ' js';</script>
+<script src="js/site.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to the content</a>
+
+<!-- Shared glyphs: four-point spark, eight-point compass star (the app icon's star), five-point star, crescent moon, lock. -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <defs>
+    <symbol id="i-spark" viewBox="-12 -12 24 24"><path d="M0,-10 C1.2,-3.6 3.6,-1.2 10,0 C3.6,1.2 1.2,3.6 0,10 C-1.2,3.6 -3.6,1.2 -10,0 C-3.6,-1.2 -1.2,-3.6 0,-10Z" fill="currentColor"/></symbol>
+    <symbol id="i-compass" viewBox="-104 -104 208 208"><path d="M-3.4,-8.3 L0,-100 L3.4,-8.3 L45.3,-45.3 L8.3,-3.4 L100,0 L8.3,3.4 L45.3,45.3 L3.4,8.3 L0,100 L-3.4,8.3 L-45.3,45.3 L-8.3,3.4 L-100,0 L-8.3,-3.4 L-45.3,-45.3Z" fill="currentColor"/></symbol>
+    <symbol id="i-star" viewBox="0 0 24 24"><path d="M12 2.5l2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.3l-5.9 3.3 1.3-6.6L2.5 9.4l6.6-.8z" fill="currentColor"/></symbol>
+    <symbol id="i-moon" viewBox="0 0 24 24"><path d="M16.5 3.4A9 9 0 1 0 20.6 15 7.4 7.4 0 0 1 16.5 3.4z" fill="currentColor"/></symbol>
+    <symbol id="i-lock" viewBox="0 0 24 24"><path fill-rule="evenodd" d="M7 10V8a5 5 0 0 1 10 0v2h.5a1.5 1.5 0 0 1 1.5 1.5v8a1.5 1.5 0 0 1-1.5 1.5h-11A1.5 1.5 0 0 1 5 19.500v-8A1.5 1.5 0 0 1 6.500 10zm2 0h6V8a3 3 0 0 0-6 0z" fill="currentColor"/></symbol>
+  </defs>
+</svg>
+
+<div class="thread-top" aria-hidden="true"><b></b></div>
+
+<header class="site night">
+  <div class="stars" aria-hidden="true"></div>
+    <div class="shell">
+      <div class="topline"><span>A habit companion for iPhone and iPad</span><span>No ads &middot; No account &middot; Works offline</span></div>
+      <nav class="primary" aria-label="Primary">
+        <a class="wordmark" href="./"><img src="img/icon-192.png" width="38" height="38" alt=""><span><small>The Daily</small>Reverie Weaver</span></a>
+        <div class="nav-links">
+          <a href="#desk">Chapters</a>
+          <a href="guide.html">The Gentle Guide</a>
+          <a href="#plans">Plans</a>
+          <a href="press.html">Press</a>
+          <a href="support.html">Support</a>
+          <span class="nav-cta">Coming to the App Store</span>
+        </div>
+      </nav>
+    </div>
+</header>
+
+<main id="main">
+  <section class="hero night" aria-label="Introduction">
+    <div class="stars" aria-hidden="true"></div>
+    <div class="shell hero-grid">
+      <div class="hero-copy">
+        <svg class="constellation" viewBox="0 0 300 150" aria-hidden="true" focusable="false">
+          <polyline points="14,30 78,122 140,48 204,122 266,30"/>
+          <use href="#i-spark" x="2" y="18" width="24" height="24"/><use href="#i-spark" x="66" y="110" width="24" height="24"/>
+          <use href="#i-spark" x="128" y="36" width="24" height="24"/><use href="#i-spark" x="192" y="110" width="24" height="24"/>
+          <use href="#i-spark" x="254" y="18" width="24" height="24"/>
+        </svg>
+        <p class="eyebrow">The Weaver&rsquo;s Grimoire</p>
+        <h1>The habit app that <span class="gild">forgives.</span></h1>
+        <p class="lede">Reverie Weaver is a gentle habit companion for iPhone and iPad. Show up imperfectly, return when you can, and let a grimoire of small days write itself, without ads, accounts, or judgment.</p>
+        <div class="hero-actions">
+          <a class="button" href="#desk">Open the Grimoire</a>
+          <a class="button ghost" href="guide.html">Read the Gentle Guide</a>
+        </div>
+        <p class="notice">Free to start. Weaver+ when you want more.<br>Coming to the App Store.</p>
+      </div>
+
+      <div class="stage">
+        <div class="stage-glow" aria-hidden="true"></div>
+        <div class="orbit" aria-hidden="true">
+          <svg viewBox="0 0 400 400" focusable="false">
+            <g class="o-ring a"><circle cx="200" cy="200" r="192" fill="none" stroke="currentColor" stroke-width="1.6" stroke-dasharray="1 7" stroke-linecap="round"/></g>
+            <circle cx="200" cy="200" r="150" fill="none" stroke="currentColor" stroke-width=".9" opacity=".65"/>
+            <g class="o-ring b"><circle cx="200" cy="200" r="120" fill="none" stroke="currentColor" stroke-width=".9" stroke-dasharray="7 6" opacity=".75"/></g>
+            <path d="M200 8V392M8 200H392M64 64L336 336M336 64L64 336" stroke="currentColor" stroke-width=".8" opacity=".5"/>
+            <g fill="currentColor"><circle cx="306" cy="94" r="3.4"/><circle cx="94" cy="94" r="3.4"/><circle cx="306" cy="306" r="3.4"/><circle cx="94" cy="306" r="3.4"/></g>
+            <use class="o-core" href="#i-compass" x="140" y="140" width="120" height="120"/>
+          </svg>
+        </div>
+        <div class="fan" aria-hidden="true">
+          <img class="c1" src="img/shots/card-first-loom.webp" width="480" height="720" alt="">
+          <img class="c2" src="img/shots/card-sealed.webp" width="480" height="720" alt="">
+        </div>
+        <svg class="spark s1" aria-hidden="true" focusable="false"><use href="#i-spark"/></svg>
+        <svg class="spark s2" aria-hidden="true" focusable="false"><use href="#i-spark"/></svg>
+        <svg class="spark s3" aria-hidden="true" focusable="false"><use href="#i-spark"/></svg>
+        <svg class="spark s4" aria-hidden="true" focusable="false"><use href="#i-spark"/></svg>
+        <svg class="spark s5" aria-hidden="true" focusable="false"><use href="#i-spark"/></svg>
+        <figure class="phone">
+          <img src="img/shots/hero-desk.webp" width="760" height="1651" fetchpriority="high" alt="Reverie Weaver's Desk in Simple Mode. A day is planned across morning and evening: Wake &amp; Hydrate is checked off, and Evening Stretch is up next.">
+        </figure>
+        <aside class="paper-note">
+          <span class="kicker">A note found inside the loom</span>
+          <p>&ldquo;If you are reading this, you have begun. That is the hardest part.&rdquo;</p>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+<div class="ticker" aria-hidden="true">
+  <div class="ticker-inner">
+    <span>Gentle by design <svg><use href="#i-spark"/></svg> The return is the victory <svg><use href="#i-spark"/></svg> Seed, sprout, bloom <svg><use href="#i-spark"/></svg> Rest days count <svg><use href="#i-spark"/></svg> A Grimoire that remembers <svg><use href="#i-spark"/></svg> Private by default <svg><use href="#i-spark"/></svg></span>
+    <span>Gentle by design <svg><use href="#i-spark"/></svg> The return is the victory <svg><use href="#i-spark"/></svg> Seed, sprout, bloom <svg><use href="#i-spark"/></svg> Rest days count <svg><use href="#i-spark"/></svg> A Grimoire that remembers <svg><use href="#i-spark"/></svg> Private by default <svg><use href="#i-spark"/></svg></span>
+  </div>
+</div>
+
+<!-- I. The Desk -->
+<section id="desk" class="block" aria-labelledby="desk-h">
+  <div class="shell">
+    <header class="chapter-head reveal">
+      <span class="numeral bronze" aria-hidden="true">I</span>
+      <div>
+        <p class="eyebrow">Chapter I &middot; The Desk</p>
+        <h2 id="desk-h">Begin where you are.</h2>
+        <p class="whisper">Every tapestry begins with one honest thread.</p>
+      </div>
+    </header>
+    <p class="section-intro reveal">Reverie Weaver opens in the mode that suits your day. Choose how much of it to see, and change your mind whenever you like.</p>
+
+    <div class="spread">
+      <article class="tarot reveal">
+        <svg class="orn tl" aria-hidden="true" focusable="false"><use href="#i-star"/></svg><svg class="orn tr" aria-hidden="true" focusable="false"><use href="#i-moon"/></svg>
+        <svg class="orn bl" aria-hidden="true" focusable="false"><use href="#i-moon"/></svg><svg class="orn br" aria-hidden="true" focusable="false"><use href="#i-star"/></svg>
+        <p class="card-no">I</p>
+        <div class="art"><img src="img/shots/art-simple.webp" width="640" height="711" loading="lazy" decoding="async" alt="Simple Mode: the day's morning, afternoon, and evening slots, with habits placed in them and an Up Next reminder."></div>
+        <h3>Simple Mode</h3>
+        <p>Three habits, three slots. Drag them into your morning, afternoon, or evening and just do them.</p>
+        <div class="tag-row"><span class="tag free">Free</span></div>
+      </article>
+      <article class="tarot reveal" data-delay="2">
+        <svg class="orn tl" aria-hidden="true" focusable="false"><use href="#i-star"/></svg><svg class="orn tr" aria-hidden="true" focusable="false"><use href="#i-moon"/></svg>
+        <svg class="orn bl" aria-hidden="true" focusable="false"><use href="#i-moon"/></svg><svg class="orn br" aria-hidden="true" focusable="false"><use href="#i-star"/></svg>
+        <p class="card-no">II</p>
+        <div class="art"><img src="img/shots/art-full.webp" width="640" height="711" loading="lazy" decoding="async" alt="Full Mode: today's intention, a Quick Action, and the Daily Habits list."></div>
+        <h3>Full Mode</h3>
+        <p>The complete Weaver: habit zones, programs, timers, reflections, and the Loom. Open it when you&rsquo;re ready, and switch back whenever you like.</p>
+        <div class="tag-row"><span class="tag free">Free</span></div>
+      </article>
+      <article class="tarot reveal" data-delay="4">
+        <svg class="orn tl" aria-hidden="true" focusable="false"><use href="#i-star"/></svg><svg class="orn tr" aria-hidden="true" focusable="false"><use href="#i-moon"/></svg>
+        <svg class="orn bl" aria-hidden="true" focusable="false"><use href="#i-moon"/></svg><svg class="orn br" aria-hidden="true" focusable="false"><use href="#i-star"/></svg>
+        <p class="card-no">III</p>
+        <div class="art"><img src="img/shots/art-programs.webp" width="640" height="711" loading="lazy" decoding="async" alt="Guided Programs: Project 50, Theme Weeks, and Mini Challenges."></div>
+        <h3>Guided programs</h3>
+        <p>Project 50, Theme Weeks, and Mini-Challenges: structured paths for building something new, with rest days and forgiving windows built in.</p>
+        <div class="tag-row"><span class="tag free">Free to begin</span><span class="tag plus">Weaver+</span></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- II. Grace -->
+<section id="grace" class="block alt" aria-labelledby="grace-h">
+  <div class="shell">
+    <header class="chapter-head reveal">
+      <span class="numeral bronze" aria-hidden="true">II</span>
+      <div>
+        <p class="eyebrow">Chapter II &middot; Grace</p>
+        <h2 id="grace-h">Showing up imperfectly counts.</h2>
+        <p class="whisper">The return is the victory.</p>
+      </div>
+    </header>
+
+    <div class="feature-grid">
+      <div class="copy reveal">
+        <p class="lead">Most habit apps are built on streaks and scolding. Reverie Weaver is built on coming back.</p>
+        <p>A day can be a Seed, a Sprout, or a Bloom, so a hard day still counts. Rest days are part of the plan, and challenge windows leave room to miss a day.</p>
+        <div class="tiers" role="list" aria-label="Seed, Sprout, and Bloom, shown with the app&rsquo;s own walking example">
+          <div class="tier" role="listitem"><svg width="22" height="22" aria-hidden="true" focusable="false"><use href="#i-spark"/></svg><b>Seed</b><span>5 min walk</span></div>
+          <div class="tier" role="listitem"><svg width="30" height="30" aria-hidden="true" focusable="false"><use href="#i-spark"/></svg><b>Sprout</b><span>15 min walk</span></div>
+          <div class="tier" role="listitem"><svg width="38" height="38" aria-hidden="true" focusable="false"><use href="#i-compass"/></svg><b>Bloom</b><span>30 min walk</span></div>
+        </div>
+        <p class="tier-note">A Seed day still counts. Consistency beats intensity.</p>
+        <ul>
+          <li><strong>The forgiving part is never behind a paywall.</strong> Tiers, streaks, rest days, and scheduling stay free.</li>
+          <li><strong>Built for the return.</strong> One constellation, The Mended Thread, can only be earned by losing the path and finding it again.</li>
+        </ul>
+      </div>
+      <div class="showcase reveal" data-delay="2">
+        <div class="halo" aria-hidden="true"></div>
+        <figure class="phone">
+          <img src="img/shots/onb-progress.webp" width="760" height="1651" loading="lazy" decoding="async" alt="Gentle Progress: Seed, Sprout, and Bloom versions of a habit, with the note that not every day is 100 percent and a Seed day still counts.">
+        </figure>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- A whisper from the Grimoire -->
+<section class="interlude night" aria-label="A line from the Grimoire">
+  <div class="stars" aria-hidden="true"></div>
+  <svg class="constellation" viewBox="0 0 420 110" aria-hidden="true" focusable="false">
+    <polyline points="22,86 100,38 178,66 256,20 334,58 398,30"/>
+    <use href="#i-spark" x="10" y="74" width="24" height="24"/><use href="#i-spark" x="88" y="26" width="24" height="24"/>
+    <use href="#i-spark" x="166" y="54" width="24" height="24"/><use href="#i-spark" x="244" y="8" width="24" height="24"/>
+    <use href="#i-spark" x="322" y="46" width="24" height="24"/><use href="#i-spark" x="386" y="18" width="24" height="24"/>
+  </svg>
+  <div class="shell">
+    <blockquote class="reveal">
+      <p>&ldquo;The strongest thread is the one that was broken and mended.&rdquo;</p>
+      <cite>The Mended Thread &middot; Resilience &middot; Constellation IX</cite>
+    </blockquote>
+  </div>
+</section>
+
+<!-- III. The Loom -->
+<section id="loom" class="block" aria-labelledby="loom-h">
+  <div class="shell">
+    <header class="chapter-head reveal">
+      <span class="numeral bronze" aria-hidden="true">III</span>
+      <div>
+        <p class="eyebrow">Chapter III &middot; The Loom</p>
+        <h2 id="loom-h">Focus, without the pressure.</h2>
+        <p class="whisper">Raise your sail; let effort move with the wind.</p>
+      </div>
+    </header>
+
+    <div class="feature-grid flip">
+      <div class="copy reveal">
+        <p class="lead">The Loom is where the day takes shape.</p>
+        <p>A timeline of your hours, three priorities for the day, and a focus timer with soft ambient sounds, all in one calm view. In landscape, Focus Sound Studio keeps Music and Atmosphere on separate, adjustable layers. Turn a PDF schedule, or a photo of one, into tasks. The text is read on your device and never uploaded.</p>
+        <ul class="facets">
+          <li><strong>Three daily priorities</strong><span>Three a day. More with Weaver+.</span><span class="tag free">Free</span></li>
+          <li><strong>Focus timer</strong><span>Two sessions a day. Unlimited with Weaver+.</span><span class="tag free">Free</span></li>
+          <li><strong>Ambient sounds</strong><span>Rain, forest, and campfire remain free; Focus Sound Studio adds independent mixing with the Weaver+ music library.</span><span class="tag free">Free</span></li>
+          <li><strong>PDF and photo import</strong><span>Turn a schedule into tasks, with text recognition on your device.</span><span class="tag plus">Weaver+</span></li>
+        </ul>
+      </div>
+      <div class="showcase tilt-l reveal" data-delay="2">
+        <div class="halo" aria-hidden="true"></div>
+        <figure class="phone">
+          <img src="img/shots/loom.webp" width="760" height="1651" loading="lazy" decoding="async" alt="The Loom: a week strip, a place for three daily priorities, a timeline of the day, and a focus timer button.">
+        </figure>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- IV. The Archive -->
+<section id="archive" class="block alt" aria-labelledby="archive-h">
+  <div class="shell">
+    <header class="chapter-head reveal">
+      <span class="numeral bronze" aria-hidden="true">IV</span>
+      <div>
+        <p class="eyebrow">Chapter IV &middot; The Archive</p>
+        <h2 id="archive-h">Look back kindly.</h2>
+        <p class="whisper">It&rsquo;s okay to slow down. Every week restarts your story.</p>
+      </div>
+    </header>
+
+    <div class="feature-grid">
+      <div class="copy reveal">
+        <p class="lead">The Archive reads your weeks and months the way a good friend would.</p>
+        <p>Weekly and monthly views, daily intentions, and reflections you can write, add photos to, and export. When a week goes quiet, the insights stay kind.</p>
+        <ul class="facets">
+          <li><strong>Weekly and monthly views</strong><span>See what you wove, at a glance.</span><span class="tag free">Free</span></li>
+          <li><strong>Everything you&rsquo;ve written</strong><span>Read it, edit it, delete it. Always, even if you never subscribe.</span><span class="tag free">Free</span></li>
+          <li><strong>Writing new reflections</strong><span>And favoriting the ones you want to keep close.</span><span class="tag plus">Weaver+</span></li>
+          <li><strong>Advanced insights</strong><span>A deeper read on your rhythm over time.</span><span class="tag plus">Weaver+</span></li>
+        </ul>
+      </div>
+      <div class="showcase reveal" data-delay="2">
+        <div class="halo" aria-hidden="true"></div>
+        <figure class="phone">
+          <img src="img/shots/archive.webp" width="760" height="1651" loading="lazy" decoding="async" alt="The Archive: a weekly summary, and a gentle insight that reads, It's okay to slow down. Every week restarts your story.">
+        </figure>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- V. The Grimoire -->
+<section id="grimoire" class="block night" aria-labelledby="grimoire-h">
+  <div class="stars" aria-hidden="true"></div>
+  <div class="shell">
+    <header class="chapter-head reveal">
+      <span class="numeral gild" aria-hidden="true">V</span>
+      <div>
+        <p class="eyebrow">Chapter V &middot; The Grimoire</p>
+        <h2 id="grimoire-h">A book that writes itself as you return.</h2>
+        <p class="whisper">Every tapestry begins with one honest thread.</p>
+      </div>
+    </header>
+
+    <div class="grim-top">
+      <div class="grim-copy reveal">
+        <p>Every habit you keep adds a thread. As the threads gather, the Grimoire opens: thirteen constellations with lore of their own, six Weaver levels from Apprentice to Transcendent, seasons that turn as your journey does, and notes found tucked inside the loom.</p>
+        <p>Some pages stay hidden until you&rsquo;ve earned them. All of it is free, and none of it is a leaderboard. The Grimoire is only ever yours.</p>
+        <p class="signal">&ldquo;The loom does not judge the trembling of new hands. It only asks that you return tomorrow.&rdquo;</p>
+      </div>
+      <div class="grim-stage reveal" data-delay="2">
+        <div class="stage-glow" aria-hidden="true"></div>
+        <div class="orbit" aria-hidden="true">
+          <svg viewBox="0 0 400 400" focusable="false">
+            <g class="o-ring a"><circle cx="200" cy="200" r="192" fill="none" stroke="currentColor" stroke-width="1.6" stroke-dasharray="1 7" stroke-linecap="round"/></g>
+            <circle cx="200" cy="200" r="150" fill="none" stroke="currentColor" stroke-width=".9" opacity=".65"/>
+            <g class="o-ring b"><circle cx="200" cy="200" r="120" fill="none" stroke="currentColor" stroke-width=".9" stroke-dasharray="7 6" opacity=".75"/></g>
+            <path d="M200 8V392M8 200H392M64 64L336 336M336 64L64 336" stroke="currentColor" stroke-width=".8" opacity=".5"/>
+            <g fill="currentColor"><circle cx="306" cy="94" r="3.4"/><circle cx="94" cy="94" r="3.4"/><circle cx="306" cy="306" r="3.4"/><circle cx="94" cy="306" r="3.4"/></g>
+          </svg>
+        </div>
+        <svg class="spark s1" aria-hidden="true" focusable="false"><use href="#i-spark"/></svg>
+        <svg class="spark s3" aria-hidden="true" focusable="false"><use href="#i-spark"/></svg>
+        <div class="duo">
+          <figure class="phone"><img src="img/shots/grimoire.webp" width="760" height="1651" loading="lazy" decoding="async" alt="The Weaver's Grimoire on the Profile screen: a row of tarot-style cards. The first, The First Loom, is open; the rest are sealed."></figure>
+          <figure class="phone"><img src="img/shots/grimoire-lore.webp" width="760" height="1651" loading="lazy" decoding="async" alt="The First Loom card turned over, with its lore beginning, Before the Age of Unspun Thread, there were no Weavers at all."></figure>
+        </div>
+      </div>
+    </div>
+
+    <div class="grim-block">
+      <h3 class="reveal">The index of constellations</h3>
+      <p class="reveal">A prologue and twelve chapters, revealed gradually as your journey grows. Each card is sealed until you earn it. Turn one over to read the hint carved on its back.</p>
+      <div class="index">
+          <div class="cstar reveal" style="--c:#F5E6D3">
+            <span class="face front">
+              <span class="no"><span class="sr">Prologue. </span><span aria-hidden="true">0</span></span>
+              <svg class="gem" aria-hidden="true" focusable="false"><use href="#i-compass"/></svg>
+              <span class="nm">The First Loom<span class="ct">Origin</span></span>
+              <span class="sr">Open. Press to read what it says.</span>
+            </span>
+            <span class="face back">
+              <span class="ct">Origin</span>
+              <span class="hint">&ldquo;Every tapestry begins with a first, imperfect frame.&rdquo;</span>
+              <small>Every tapestry begins with one honest thread.</small>
+              <span class="sr">Press to turn the card back.</span>
+            </span>
+          </div>
+          <div class="cstar reveal" style="--c:#E2B549">
+            <span class="face front">
+              <span class="no"><span class="sr">Chapter I. </span><span aria-hidden="true">I</span></span>
+              <svg class="gem" aria-hidden="true" focusable="false"><use href="#i-compass"/></svg>
+              <span class="nm">The Morning Star<span class="ct">Morning Rituals</span></span>
+              <svg class="lock" aria-hidden="true" focusable="false"><use href="#i-lock"/></svg>
+              <span class="sr">Sealed. Press to read the hint.</span>
+            </span>
+            <span class="face back">
+              <span class="ct">Morning Rituals</span>
+              <span class="hint">&ldquo;To find this star, one must greet the day before the world rushes in.&rdquo;</span>
+              <small>The first light you greet shapes the whole day.</small>
+              <span class="sr">Press to turn the card back.</span>
+            </span>
+          </div>
+          <div class="cstar reveal" style="--c:#8398C9">
+            <span class="face front">
+              <span class="no"><span class="sr">Chapter II. </span><span aria-hidden="true">II</span></span>
+              <svg class="gem" aria-hidden="true" focusable="false"><use href="#i-compass"/></svg>
+              <span class="nm">The Tranquil Moon<span class="ct">Mindful Living</span></span>
+              <svg class="lock" aria-hidden="true" focusable="false"><use href="#i-lock"/></svg>
+              <span class="sr">Sealed. Press to read the hint.</span>
+            </span>
+            <span class="face back">
+              <span class="ct">Mindful Living</span>
+              <span class="hint">&ldquo;This luminary appears only to those who stop moving and start seeing.&rdquo;</span>
+              <small>Stillness between threads holds the quiet pattern.</small>
+              <span class="sr">Press to turn the card back.</span>
+            </span>
+          </div>
+          <div class="cstar reveal" style="--c:#A8B5A0">
+            <span class="face front">
+              <span class="no"><span class="sr">Chapter III. </span><span aria-hidden="true">III</span></span>
+              <svg class="gem" aria-hidden="true" focusable="false"><use href="#i-compass"/></svg>
+              <span class="nm">The Verdant Leaf<span class="ct">Health Foundations</span></span>
+              <svg class="lock" aria-hidden="true" focusable="false"><use href="#i-lock"/></svg>
+              <span class="sr">Sealed. Press to read the hint.</span>
+            </span>
+            <span class="face back">
+              <span class="ct">Health Foundations</span>
+              <span class="hint">&ldquo;Tend to the roots, and the leaves will appear on their own.&rdquo;</span>
+              <small>Tend the loom of your body before the work.</small>
+              <span class="sr">Press to turn the card back.</span>
+            </span>
+          </div>
+          <div class="cstar reveal" style="--c:#D4A5A5">
+            <span class="face front">
+              <span class="no"><span class="sr">Chapter IV. </span><span aria-hidden="true">IV</span></span>
+              <svg class="gem" aria-hidden="true" focusable="false"><use href="#i-compass"/></svg>
+              <span class="nm">The Sacred Flame<span class="ct">Creative Practice</span></span>
+              <svg class="lock" aria-hidden="true" focusable="false"><use href="#i-lock"/></svg>
+              <span class="sr">Sealed. Press to read the hint.</span>
+            </span>
+            <span class="face back">
+              <span class="ct">Creative Practice</span>
+              <span class="hint">&ldquo;This fire cannot be found; it must be made from nothing.&rdquo;</span>
+              <small>Feed the small fire that colors your days.</small>
+              <span class="sr">Press to turn the card back.</span>
+            </span>
+          </div>
+          <div class="cstar reveal" style="--c:#B8C5D6">
+            <span class="face front">
+              <span class="no"><span class="sr">Chapter V. </span><span aria-hidden="true">V</span></span>
+              <svg class="gem" aria-hidden="true" focusable="false"><use href="#i-compass"/></svg>
+              <span class="nm">The Gentle Wind<span class="ct">Focus Flow</span></span>
+              <svg class="lock" aria-hidden="true" focusable="false"><use href="#i-lock"/></svg>
+              <span class="sr">Sealed. Press to read the hint.</span>
+            </span>
+            <span class="face back">
+              <span class="ct">Focus Flow</span>
+              <span class="hint">&ldquo;Force nothing. To catch the wind, you must first raise the sail.&rdquo;</span>
+              <small>Raise your sail; let effort move with the wind.</small>
+              <span class="sr">Press to turn the card back.</span>
+            </span>
+          </div>
+          <div class="cstar reveal" style="--c:#A3C9D9">
+            <span class="face front">
+              <span class="no"><span class="sr">Chapter VI. </span><span aria-hidden="true">VI</span></span>
+              <svg class="gem" aria-hidden="true" focusable="false"><use href="#i-compass"/></svg>
+              <span class="nm">The Crystal Drop<span class="ct">Connection</span></span>
+              <svg class="lock" aria-hidden="true" focusable="false"><use href="#i-lock"/></svg>
+              <span class="sr">Sealed. Press to read the hint.</span>
+            </span>
+            <span class="face back">
+              <span class="ct">Connection</span>
+              <span class="hint">&ldquo;One drop alone evaporates; many drops make an ocean.&rdquo;</span>
+              <small>Each small kindness binds separate lives together.</small>
+              <span class="sr">Press to turn the card back.</span>
+            </span>
+          </div>
+          <div class="cstar reveal" style="--c:#8B7E74">
+            <span class="face front">
+              <span class="no"><span class="sr">Chapter VII. </span><span aria-hidden="true">VII</span></span>
+              <svg class="gem" aria-hidden="true" focusable="false"><use href="#i-compass"/></svg>
+              <span class="nm">The Steady Mountain<span class="ct">Tiny Anchors</span></span>
+              <svg class="lock" aria-hidden="true" focusable="false"><use href="#i-lock"/></svg>
+              <span class="sr">Sealed. Press to read the hint.</span>
+            </span>
+            <span class="face back">
+              <span class="ct">Tiny Anchors</span>
+              <span class="hint">&ldquo;Stone by stone, the mountain is built. Do not look at the summit.&rdquo;</span>
+              <small>Tiny anchors, laid daily, become a mountain.</small>
+              <span class="sr">Press to turn the card back.</span>
+            </span>
+          </div>
+          <div class="cstar reveal" style="--c:#E5E5E5">
+            <span class="face front">
+              <span class="no"><span class="sr">Chapter VIII. </span><span aria-hidden="true">VIII</span></span>
+              <svg class="gem" aria-hidden="true" focusable="false"><use href="#i-compass"/></svg>
+              <span class="nm">The Wandering Cloud<span class="ct">Dopamine Design</span></span>
+              <svg class="lock" aria-hidden="true" focusable="false"><use href="#i-lock"/></svg>
+              <span class="sr">Sealed. Press to read the hint.</span>
+            </span>
+            <span class="face back">
+              <span class="ct">Dopamine Design</span>
+              <span class="hint">&ldquo;To hold a cloud, you must open your hand, not close it.&rdquo;</span>
+              <small>Design discipline that drifts with your joy.</small>
+              <span class="sr">Press to turn the card back.</span>
+            </span>
+          </div>
+          <div class="cstar reveal" style="--c:#E8A87C">
+            <span class="face front">
+              <span class="no"><span class="sr">Chapter IX. </span><span aria-hidden="true">IX</span></span>
+              <svg class="gem" aria-hidden="true" focusable="false"><use href="#i-compass"/></svg>
+              <span class="nm">The Mended Thread<span class="ct">Resilience</span></span>
+              <svg class="lock" aria-hidden="true" focusable="false"><use href="#i-lock"/></svg>
+              <span class="sr">Sealed. Press to read the hint.</span>
+            </span>
+            <span class="face back">
+              <span class="ct">Resilience</span>
+              <span class="hint">&ldquo;To find this star, one must lose the path and have the courage to return.&rdquo;</span>
+              <small>The strongest thread is the one that was broken and mended.</small>
+              <span class="sr">Press to turn the card back.</span>
+            </span>
+          </div>
+          <div class="cstar reveal" style="--c:#6F8CAE">
+            <span class="face front">
+              <span class="no"><span class="sr">Chapter X. </span><span aria-hidden="true">X</span></span>
+              <svg class="gem" aria-hidden="true" focusable="false"><use href="#i-compass"/></svg>
+              <span class="nm">The Silent Deep<span class="ct">Deep Work</span></span>
+              <svg class="lock" aria-hidden="true" focusable="false"><use href="#i-lock"/></svg>
+              <span class="sr">Sealed. Press to read the hint.</span>
+            </span>
+            <span class="face back">
+              <span class="ct">Deep Work</span>
+              <span class="hint">&ldquo;This star is found only by those who turn off the noise to hear the signal.&rdquo;</span>
+              <small>Below the waves of distraction lies the silence of power.</small>
+              <span class="sr">Press to turn the card back.</span>
+            </span>
+          </div>
+          <div class="cstar reveal" style="--c:#8F94BD">
+            <span class="face front">
+              <span class="no"><span class="sr">Chapter XI. </span><span aria-hidden="true">XI</span></span>
+              <svg class="gem" aria-hidden="true" focusable="false"><use href="#i-compass"/></svg>
+              <span class="nm">The Iron Spindle<span class="ct">Structure</span></span>
+              <svg class="lock" aria-hidden="true" focusable="false"><use href="#i-lock"/></svg>
+              <span class="sr">Sealed. Press to read the hint.</span>
+            </span>
+            <span class="face back">
+              <span class="ct">Structure</span>
+              <span class="hint">&ldquo;Softness needs a spine. Complete a full cycle of discipline to find this.&rdquo;</span>
+              <small>Discipline is the iron spine that holds the dream upright.</small>
+              <span class="sr">Press to turn the card back.</span>
+            </span>
+          </div>
+          <div class="cstar reveal" style="--c:#E6C063">
+            <span class="face front">
+              <span class="no"><span class="sr">Chapter XII. </span><span aria-hidden="true">XII</span></span>
+              <svg class="gem" aria-hidden="true" focusable="false"><use href="#i-compass"/></svg>
+              <span class="nm">The Golden Solstice<span class="ct">Cycles</span></span>
+              <svg class="lock" aria-hidden="true" focusable="false"><use href="#i-lock"/></svg>
+              <span class="sr">Sealed. Press to read the hint.</span>
+            </span>
+            <span class="face back">
+              <span class="ct">Cycles</span>
+              <span class="hint">&ldquo;One cannot chase the sun; one must wait for the seasons to turn.&rdquo;</span>
+              <small>You are not a machine; you are a garden that cycles.</small>
+              <span class="sr">Press to turn the card back.</span>
+            </span>
+          </div>
+      </div>
+    </div>
+
+    <div class="grim-block">
+      <h3 class="reveal">Six levels. Then threads of silver and gold.</h3>
+      <p class="reveal">Your level grows with the threads you weave: every completion adds one.</p>
+      <ol class="levels-line reveal">
+        <li><span class="node"><svg width="28" height="28" aria-hidden="true" focusable="false"><use href="#i-compass"/></svg></span><b>Apprentice</b><span>Level 1</span></li>
+        <li><span class="node"><svg width="34" height="34" aria-hidden="true" focusable="false"><use href="#i-compass"/></svg></span><b>Mindful</b><span>50 threads</span></li>
+        <li><span class="node"><svg width="40" height="40" aria-hidden="true" focusable="false"><use href="#i-compass"/></svg></span><b>Devoted</b><span>150 threads</span></li>
+        <li><span class="node"><svg width="46" height="46" aria-hidden="true" focusable="false"><use href="#i-compass"/></svg></span><b>Master</b><span>300 threads</span></li>
+        <li><span class="node"><svg width="52" height="52" aria-hidden="true" focusable="false"><use href="#i-compass"/></svg></span><b>Luminous</b><span>500 threads</span></li>
+        <li><span class="node"><svg width="60" height="60" aria-hidden="true" focusable="false"><use href="#i-compass"/></svg></span><b>Transcendent</b><span>1,000 threads</span></li>
+      </ol>
+      <p class="beyond reveal">Beyond a thousand come the prestige threads: <strong>Silver</strong>, <strong>Golden</strong>, <strong>Celestial</strong>, <strong>Eternal</strong>, and <strong>Mythic Weaver</strong>.</p>
+    </div>
+
+    <div class="grim-block">
+      <h3 class="reveal">Notes found inside the loom</h3>
+      <p class="reveal">At each level, a new note turns up in the frame, written by someone who wove before you. The first is waiting from day one. The rest stay sealed.</p>
+      <div class="notes">
+        <article class="note-open reveal">
+          <span class="kicker">Level 1</span>
+          <h4>A Note Found Inside the Loom</h4>
+          <p>You have found a folded paper tucked between the warp strings. The handwriting is small and careful:</p>
+          <blockquote><p>&ldquo;If you are reading this, you have begun. That is the hardest part. I was like you once&mdash;uncertain, starting something I couldn&rsquo;t yet name. I left this note because I wanted you to know: the loom does not judge the trembling of new hands. It only asks that you return tomorrow.&rdquo;</p></blockquote>
+          <p class="unsigned">It is unsigned.</p>
+        </article>
+        <div class="sealed-list">
+          <div class="note-sealed reveal"><span class="seal"><svg aria-hidden="true" focusable="false"><use href="#i-spark"/></svg></span><div><b>A Second Note, Deeper in the Frame</b><span>Sealed until Mindful Weaver</span></div></div>
+          <div class="note-sealed reveal" data-delay="1"><span class="seal"><svg aria-hidden="true" focusable="false"><use href="#i-spark"/></svg></span><div><b>A Note Sewn Into the Cloth Itself</b><span>Sealed until Devoted Weaver</span></div></div>
+          <div class="note-sealed reveal" data-delay="2"><span class="seal"><svg aria-hidden="true" focusable="false"><use href="#i-spark"/></svg></span><div><b>A Note Under the Crossbeam</b><span>Sealed until Master Weaver</span></div></div>
+          <div class="note-sealed reveal" data-delay="3"><span class="seal"><svg aria-hidden="true" focusable="false"><use href="#i-spark"/></svg></span><div><b>A Note Sealed in Wax</b><span>Sealed until Luminous Weaver</span></div></div>
+          <div class="note-sealed reveal" data-delay="4"><span class="seal"><svg aria-hidden="true" focusable="false"><use href="#i-spark"/></svg></span><div><b>The Final Note</b><span>Sealed until Transcendent Weaver</span></div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- VI. Private by default -->
+<section id="private" class="block private" aria-labelledby="private-h">
+  <div class="shell">
+    <header class="reveal">
+      <span class="numeral bronze" aria-hidden="true" style="display:block;margin-bottom:6px">VI</span>
+      <p class="eyebrow">Chapter VI &middot; Private by default</p>
+      <h2 id="private-h">Your habits are nobody&rsquo;s business but yours.</h2>
+    </header>
+    <p class="section-intro reveal">Reverie Weaver keeps what you write on your device. There is nothing to sign up for, nothing to log in to, and nothing quietly counting what you do.</p>
+    <div class="private-grid reveal">
+      <div><strong>No account</strong><span>Open the app and begin. There is nothing to sign up for.</span></div>
+      <div><strong>On your device</strong><span>Your habits and reflections live on your device. iCloud sync is optional and off by default.</span></div>
+      <div><strong>No tracking</strong><span>No ads, no analytics, and no third-party trackers. Text recognition for PDFs and photos runs on your device.</span></div>
+    </div>
+    <a class="more" href="privacy.html">Read the privacy policy &rarr;</a>
+  </div>
+</section>
+
+<!-- VII. Plans -->
+<section id="plans" class="block alt" aria-labelledby="plans-h">
+  <div class="shell">
+    <header class="chapter-head reveal">
+      <span class="numeral bronze" aria-hidden="true">VII</span>
+      <div>
+        <p class="eyebrow">Chapter VII &middot; Plans</p>
+        <h2 id="plans-h">Free to start. Weaver+ when you want more.</h2>
+        <p class="whisper">The forgiving core is free. Browsing the whole Habit Library always stays free too.</p>
+      </div>
+    </header>
+
+    <div class="plan-grid">
+      <article class="plan reveal">
+        <span class="tag free">Free</span>
+        <h3>The gentle core</h3>
+        <p class="sub">Everything that makes it forgiving.</p>
+        <ul>
+          <li>Up to three active habits of your own, with seed, sprout, and bloom tiers, streaks, rest days, and scheduling</li>
+          <li>The whole Grimoire: levels, constellations, notes, and achievements</li>
+          <li>Browse and preview every habit in the Habit Library, and choose a goal in Get Started to see your path</li>
+          <li>Gentle Rhythm Week, free every time, and Level 1 of Project 50, free once</li>
+          <li>The Loom, lite: three priority tasks, two focus sessions a day, and ambient sounds</li>
+          <li>Reading, editing, and deleting everything you&rsquo;ve already written. Always</li>
+          <li>Today&rsquo;s Threads, Completion Ring, and Quick Action widgets</li>
+          <li>Optional iCloud sync, off by default</li>
+        </ul>
+      </article>
+      <article class="plan paid reveal" data-delay="2">
+        <span class="tag plus">Weaver+</span>
+        <h3>When you want more</h3>
+        <p class="sub">Breadth and depth, for when you&rsquo;re ready.</p>
+        <ul>
+          <li>Add habits from the Habit Library, and keep more than three active habits</li>
+          <li>Project 50 beyond Level 1, every other Theme Week and Mini-Challenge, and your own saved custom programs</li>
+          <li>Unlimited focus sessions and the curated background-music library</li>
+          <li>More than three priority tasks (the rest wait their turn), and PDF or photo schedule import</li>
+          <li>Writing new reflections, and favoriting the ones you love</li>
+          <li>Advanced Archive insights</li>
+          <li>Journey Progress and Loom Focus widgets</li>
+        </ul>
+      </article>
+    </div>
+
+    <p class="price-line reveal"><strong>Weaver+ is planned at $3.99 a month or $24.99 a year in the US,</strong> with a 7-day free trial on the annual plan for eligible Apple Accounts. A $59.99 lifetime purchase may appear only during the year-turning season, from December 20 through Lunar New Year&rsquo;s Day. Your App Store shows the product, eligibility, and price in your own currency before purchase.</p>
+    <p class="promise reveal">We won&rsquo;t count down at you. No timers, no pressure.</p>
+  </div>
+</section>
+
+<!-- Closing -->
+<section class="closing" aria-labelledby="closing-h">
+  <svg class="spark a" aria-hidden="true" focusable="false"><use href="#i-spark"/></svg>
+  <svg class="spark b" aria-hidden="true" focusable="false"><use href="#i-spark"/></svg>
+  <div class="shell reveal">
+    <p class="eyebrow" data-greeting>Hello.</p>
+    <h2 id="closing-h">Begin with one honest thread.</h2>
+    <p>Reverie Weaver is coming to iPhone and iPad. Until then, the Gentle Guide shows what a first day looks like.</p>
+    <div class="actions">
+      <a class="button ink" href="guide.html">Read the Gentle Guide</a>
+      <a class="button outline" href="press.html">Press kit</a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="site night">
+  <div class="stars" aria-hidden="true"></div>
+  <div class="shell">
+    <div class="footer-top">
+      <div>
+        <a class="wordmark" href="./"><img src="img/icon-192.png" width="38" height="38" alt=""><span><small>The Daily</small>Reverie Weaver</span></a>
+      </div>
+      <nav class="footer-links" aria-label="Footer">
+        <a href="guide.html">The Gentle Guide</a>
+        <a href="press.html">Press</a>
+        <a href="support.html">Support</a>
+        <a href="privacy.html">Privacy policy</a>
+        <a href="mailto:reveriearchive.studio@gmail.com">Contact</a>
+      </nav>
+    </div>
+    <div class="footer-base">
+      <span>&copy; <span data-year>2026</span> Reverie Archive</span>
+      <span>No cookies. Nothing loaded from other sites.</span>
+    </div>
+  </div>
+</footer>
+
+<nav class="rail" aria-label="Chapters">
+  <ol>
+    <li><a href="#desk"><span aria-hidden="true">I</span><em>The Desk</em><span class="sr">Chapter I, The Desk</span></a></li>
+    <li><a href="#grace"><span aria-hidden="true">II</span><em>Grace</em><span class="sr">Chapter II, Grace</span></a></li>
+    <li><a href="#loom"><span aria-hidden="true">III</span><em>The Loom</em><span class="sr">Chapter III, The Loom</span></a></li>
+    <li><a href="#archive"><span aria-hidden="true">IV</span><em>The Archive</em><span class="sr">Chapter IV, The Archive</span></a></li>
+    <li><a href="#grimoire"><span aria-hidden="true">V</span><em>The Grimoire</em><span class="sr">Chapter V, The Grimoire</span></a></li>
+    <li><a href="#private"><span aria-hidden="true">VI</span><em>Private</em><span class="sr">Chapter VI, Private by default</span></a></li>
+    <li><a href="#plans"><span aria-hidden="true">VII</span><em>Plans</em><span class="sr">Chapter VII, Plans</span></a></li>
+  </ol>
+</nav>
+</body>
+</html>
